@@ -123,6 +123,15 @@ const MicrosoftOffice365Calendar = (credential) => {
     }
 };
 
+function getRandomString(length) {
+    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var result = '';
+    for ( var i = 0; i < length; i++ ) {
+        result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+    }
+    return result;
+}
+
 const GoogleCalendar = (credential) => {
     const myGoogleAuth = googleAuth();
     myGoogleAuth.setCredentials(credential.key);
@@ -163,12 +172,21 @@ const GoogleCalendar = (credential) => {
                         {'method': 'email', 'minutes': 60}
                     ],
                 },
+                conferenceData: {
+                    createRequest: {
+                        conferenceSolutionKey: {
+                          type: 'hangoutsMeet'
+                        },
+                        requestId: getRandomString(7)
+                    }
+                }
             };
 
             const calendar = google.calendar({version: 'v3', auth: myGoogleAuth });
             calendar.events.insert({
                 auth: myGoogleAuth,
                 calendarId: 'primary',
+                conferenceDataVersion: 1,
                 resource: payload,
             }, function(err, event) {
                 if (err) {
