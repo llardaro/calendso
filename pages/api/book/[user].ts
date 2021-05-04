@@ -16,6 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             name: true,
             credentials: true,
             timeZone: true,
+            avatar: true
         }
     });
 
@@ -27,10 +28,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         timeZone: currentUser.timeZone,
         attendees: [
             { email: req.body.email, name: req.body.name }
-        ]
+        ],
+        organizer: {
+            name: currentUser.name,
+            picture: currentUser.avatar
+        }
     };
 
     // TODO: for now, first integration created; primary = obvious todo; ability to change primary.
     const result = await createEvent(currentUser.credentials[0], evt);
+
+
     res.status(200).json(result);
 }
