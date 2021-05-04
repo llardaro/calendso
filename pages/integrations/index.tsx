@@ -32,7 +32,7 @@ export default function Home(props) {
     return (
         <div>
             <Head>
-                <title>Integrations | Calendso</title>
+                <title>Integrations | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

@@ -21,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const evt: CalendarEvent = {
         title: 'ITC America - ' + req.body.eventType.title,
-        description: req.body.eventType.description + '....... Requester additional notes: ' + req.body.notes,
+        description: req.body.eventType.description + '================ Requester additional notes: ' + req.body.notes,
         startTime: req.body.start,
         endTime: req.body.end,
         timeZone: currentUser.timeZone,

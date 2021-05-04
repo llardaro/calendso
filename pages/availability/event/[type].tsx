@@ -62,7 +62,7 @@ export default function EventType(props) {
     return (
         <div>
             <Head>
-                <title>{props.eventType.title} | Event Type | Calendso</title>
+                <title>{props.eventType.title} | Event Type | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Shell heading={'Event Type - ' + props.eventType.title}>

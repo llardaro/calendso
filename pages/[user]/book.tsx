@@ -34,7 +34,7 @@ export default function Book(props) {
     return (
         <div>
             <Head>
-                <title>Confirm your {props.eventType.title} with {props.user.name || props.user.username} | Calendso</title>
+                <title>Confirm your {props.eventType.title} with {props.user.name || props.user.username} | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

@@ -105,7 +105,7 @@ export default function Availability(props) {
     return(
         <div>
             <Head>
-                <title>Availability | Calendso</title>
+                <title>Availability | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Shell heading="Availability">

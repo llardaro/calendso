@@ -35,7 +35,7 @@ export default function Success(props) {
     return(
         <div>
             <Head>
-                <title>Booking Confirmed | {props.eventType.title} with {props.user.name || props.user.username} | Calendso</title>
+                <title>Booking Confirmed | {props.eventType.title} with {props.user.name || props.user.username} | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

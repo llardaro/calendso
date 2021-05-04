@@ -45,7 +45,7 @@ export default function Settings(props) {
     return(
         <Shell heading="Password">
             <Head>
-                <title>Change Password | Calendso</title>
+                <title>Change Password | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <SettingsShell>

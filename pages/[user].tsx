@@ -17,7 +17,7 @@ export default function User(props) {
     return (
         <div>
             <Head>
-                <title>{props.user.name || props.user.username} | Calendso</title>
+                <title>{props.user.name || props.user.username} | ITC America</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
