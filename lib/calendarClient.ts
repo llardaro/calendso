@@ -195,6 +195,7 @@ const GoogleCalendar = (credential) => {
                 conferenceDataVersion: 1,
                 resource: payload,
                 sendNotifications: true,
+                sendUpdates: 'all',
             }, function(err, event) {
                 if (err) {
                     console.log('There was an error contacting the Calendar service: ' + err);
