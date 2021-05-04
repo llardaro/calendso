@@ -1,8 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import Link from 'next/link';
 import prisma from '../../../lib/prisma';
 import { createEvent, CalendarEvent } from '../../../lib/calendarClient';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+
+
     const { user } = req.query;
 
     const currentUser = await prisma.user.findFirst({
@@ -10,14 +13,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           username: user,
         },
         select: {
+            name: true,
             credentials: true,
             timeZone: true,
         }
     });
 
     const evt: CalendarEvent = {
-        title: 'Meeting with ' + req.body.name,
-        description: req.body.notes,
+        title: 'ITC America - ' + req.body.eventType.title,
+        description: req.body.eventType.description + '....... Requester additional notes: ' + req.body.notes,
         startTime: req.body.start,
         endTime: req.body.end,
         timeZone: currentUser.timeZone,

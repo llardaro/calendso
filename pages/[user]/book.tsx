@@ -19,7 +19,8 @@ export default function Book(props) {
                     end: dayjs(date).add(props.eventType.length, 'minute').format(),
                     name: event.target.name.value,
                     email: event.target.email.value,
-                    notes: event.target.notes.value
+                    notes: event.target.notes.value,
+                    eventType: props.eventType
                   }),
                 headers: {
                     'Content-Type': 'application/json'
