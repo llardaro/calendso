@@ -55,7 +55,7 @@ export default function Success(props) {
                                         </h3>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">
-                                            You are scheduled in with {props.user.name || props.user.username}.
+                                            You are scheduled in with {props.user.name || props.user.username}. We sent you the invitation via email.
                                         </p>
                                     </div>
                                     <div className="mt-4 border-t border-b py-4">
@@ -71,7 +71,7 @@ export default function Success(props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-5 sm:mt-6 text-center">
+                            {/* <div className="mt-5 sm:mt-6 text-center">
                                 <span className="font-medium text-gray-500">Add to your calendar</span>
                                 <div className="flex mt-2">
                                     <Link href={encodeURI("https://calendar.google.com/calendar/render?action=TEMPLATE&dates=" + dayjs(date).format() + "%2F" + dayjs(date).add(props.eventType.length, 'minute').format() + "&details=" + props.eventType.title + " with " + props.user.name + "&text=" + props.eventType.description)}>
@@ -96,7 +96,7 @@ export default function Success(props) {
                                         </a>
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
