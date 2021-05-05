@@ -144,7 +144,7 @@ export default function Type(props) {
             </Head>
 
             <main className={"mx-auto my-24 transition-max-width ease-in-out duration-500 " + (selectedDate ? 'max-w-6xl' : 'max-w-3xl')}>
-                <div className="bg-white overflow-hidden shadow rounded-lg md:max-h-96">
+                <div className="bg-white overflow-hidden shadow rounded-lg md:max-h-100">
                     <div className="sm:flex px-4 py-5 sm:p-4">
                         <div className={"pr-8 sm:border-r " + (selectedDate ? 'sm:w-1/3' : 'sm:w-1/2')}>
                             {props.user.avatar && <img src={props.user.avatar} alt="Avatar" className="w-16 h-16 rounded-full mb-4"/>}
