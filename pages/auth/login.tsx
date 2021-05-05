@@ -3,13 +3,14 @@ import { csrfToken } from 'next-auth/client';
 
 export default function Login({ csrfToken }) {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8" style={{backgroundColor: '#040B19'}}>
         <Head>
             <title>Login</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <img src="../itc-white.png" alt="ITC" className="mx-auto h-14 mb-4"/>
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-200">
                 Sign in to your account
             </h2>
         </div>
