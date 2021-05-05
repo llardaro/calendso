@@ -83,6 +83,28 @@ export default function Book(props) {
                         </div>
                     </div>
                 </div>
+                <div className="flex justify-between mt-4">
+                    <div>
+                        <h1 className="text-3xl font-semibold text-gray-200 mb-1">ITC America</h1>
+                        <p className="text-gray-300"><a href="https://itcamerica.net" target="_blank">www.itcamerica.net</a></p>
+                        <p className="text-gray-300"><a href="tel:+17549005149">+1 (754) 900-5149</a></p>
+                        <p className="text-gray-300">652 N University Drive, Pembroke Pines, Florida 33024</p>
+                    </div>
+                    <div>
+                        <img src="../itc-white.png" alt="ITC" className="mx-auto h-14 mt-2"/>
+                        <div className="flex justify-between">
+                            <div>
+                                <a href="https://www.facebook.com/ITCAmerica/" target="_blank"><img alt="Facebook" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/facebook2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="Facebook" width="32"/></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/itcamerica/" target="_blank"><img alt="Instagram" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/instagram2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="Instagram" width="32"/></a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/itc-america" target="_blank"><img alt="LinkedIn" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/linkedin2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="LinkedIn" width="32"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     )

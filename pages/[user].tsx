@@ -23,9 +23,10 @@ export default function User(props) {
 
             <main className="max-w-2xl mx-auto my-24">
                 <div className="mb-8 text-center">
+                    {/* <img src="itc-white.png" alt="ITC" className="mx-auto h-14 mb-4"/> */}
                     {props.user.avatar && <img src={props.user.avatar} alt="Avatar" className="mx-auto w-24 h-24 rounded-full mb-4"/>}
-                    <h1 className="text-3xl font-semibold text-gray-800 mb-1">{props.user.name || props.user.username}</h1>
-                    <p className="text-gray-600">{props.user.bio}</p>
+                    <h1 className="text-3xl font-semibold text-gray-200 mb-1">{props.user.name || props.user.username}</h1>
+                    <p className="text-gray-300">{props.user.bio}</p>
                 </div>
                 <div className="bg-white shadow overflow-hidden rounded-md">
                     <ul className="divide-y divide-gray-200">
@@ -37,6 +38,28 @@ export default function User(props) {
                             <p className="max-w-md mx-auto">This user hasn't set up any event types yet.</p>
                         </div>
                     }
+                </div>
+                <div className="flex justify-between mt-8">
+                    <div>
+                        <h1 className="text-3xl font-semibold text-gray-200 mb-1">ITC America</h1>
+                        <p className="text-gray-300"><a href="https://itcamerica.net" target="_blank">www.itcamerica.net</a></p>
+                        <p className="text-gray-300"><a href="tel:+17549005149">+1 (754) 900-5149</a></p>
+                        <p className="text-gray-300">652 N University Drive, Pembroke Pines, Florida 33024</p>
+                    </div>
+                    <div>
+                        <img src="../itc-white.png" alt="ITC" className="mx-auto h-14 mt-2"/>
+                        <div className="flex justify-between">
+                            <div>
+                                <a href="https://www.facebook.com/ITCAmerica/" target="_blank"><img alt="Facebook" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/facebook2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="Facebook" width="32"/></a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/itcamerica/" target="_blank"><img alt="Instagram" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/instagram2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="Instagram" width="32"/></a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/itc-america" target="_blank"><img alt="LinkedIn" height="32" src="https://cdn.itcamerica.net/email-templates/calendso-event-added/linkedin2x.png" style={{height: 'auto', border: 0, display: 'block'}} title="LinkedIn" width="32"/></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
