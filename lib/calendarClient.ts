@@ -231,9 +231,6 @@ const GoogleCalendar = (credential) => {
                     html: messageBody, // html body
                 });
 
-                console.log('DATOS DEL EVENTO =====================');
-                console.log(event.data);
-
                 return resolve(event.data);
             });
         })
