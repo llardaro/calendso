@@ -101,7 +101,7 @@ export default function Success(props) {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between mt-4">
+                <div className="flex justify-between mt-4 fixed z-10 w-auto" style={{bottom: '50px'}}>
                     <div>
                         <h1 className="text-3xl font-semibold text-gray-200 mb-1">ITC America</h1>
                         <p className="text-gray-300"><a href="https://itcamerica.net" target="_blank">www.itcamerica.net</a></p>
